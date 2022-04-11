@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- cdnjs.com  font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Javier Music Player</h1>
+
+     <div class="container" id="container">
+      <div class="musicplayer" id="musicplayer">
+        <div class="musictitle"><h4 id="songtitle"></h4></div>
+        <!-- image element -->
+        <div class="musiccover">
+          <img src="images/bensound-betterdays.jpg" alt="music-cover" id="songcover" />
+        </div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+        <!-- audio element -->
+        <audio src="music/bensound-betterdays.mp3" id="songaudio"></audio>
+        
+        <!-- controls elements -->
+        <div class="musiccontrols">
+          
+          <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fas fa-forward"></i>
+            </button>
+          
+          </div>
+        </div>
+
+
+      </div>
+
+      <br>
+<!-- Songs list elements -->
+      <div class="listmusic">
+        <h1>Please select your favorite song:</h1>
+        <div class="songname" id="song1">-> bensound-betterdays</div>
+        <div class="songname" id="song2">-> bensound-sunny</div>
+        <div class="songname" id="song3">-> bensound-ukulele</div>
+
+      </div>
+    </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
